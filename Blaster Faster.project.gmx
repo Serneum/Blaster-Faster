@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\s_ship</sprite>
+    <sprite>sprites\s_laser</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_stars_far</background>
@@ -15,6 +16,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\o_ship</object>
+    <object>objects\o_laser</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_space</room>
