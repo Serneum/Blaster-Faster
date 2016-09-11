@@ -54,6 +54,7 @@ randomize();</code>
   <instances>
     <instance objName="o_ship" x="90" y="288" name="inst_96E13B11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy_spawner" x="0" y="0" name="inst_0AF15526" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_game" x="126" y="0" name="inst_67417A7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

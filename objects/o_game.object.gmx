@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,24 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Control the enemy
-if (y &gt; room_height + (sprite_height / 2)) {
-    instance_destroy();
-}
-
-// Die code
-if (armor &lt;= 0) {
-    instance_create(x, y, o_explosion_center);
-    instance_destroy();
-    
-    score += 5;
-}
+            <string>/// Initialize the game object
+score = 0;
+high_score = 0;
+draw_set_colour(c_white);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="o_ship">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -59,9 +51,8 @@ if (armor &lt;= 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Damage the ship
-other.armor -= 1;
-armor = 0;
+            <string>/// Draw the score
+draw_text(x, y, score);
 </string>
           </argument>
         </arguments>

@@ -29,6 +29,7 @@
       <object>objects\o_enemy_parent</object>
       <object>objects\o_enemy_laser</object>
     </objects>
+    <object>objects\o_game</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_space</room>
