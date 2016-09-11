@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>3547954</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>// Give the game a random seed for random numbers
+randomize();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -52,9 +53,7 @@
   </views>
   <instances>
     <instance objName="o_ship" x="90" y="288" name="inst_96E13B11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_enemy_one" x="36" y="72" name="inst_80E4328F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_enemy_one" x="90" y="32" name="inst_DFDDC46C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_enemy_one" x="144" y="72" name="inst_C24AD95D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_enemy_spawner" x="0" y="0" name="inst_0AF15526" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
