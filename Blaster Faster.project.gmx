@@ -11,6 +11,7 @@
     <sprite>sprites\s_enemy_one</sprite>
     <sprite>sprites\s_enemy_two</sprite>
     <sprite>sprites\s_explosion_center</sprite>
+    <sprite>sprites\s_enemy_laser</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_stars_far</background>
@@ -20,6 +21,7 @@
   <objects name="objects">
     <object>objects\o_ship</object>
     <object>objects\o_laser</object>
+    <object>objects\o_enemy_laser</object>
     <object>objects\o_enemy_one</object>
     <object>objects\o_enemy_two</object>
     <object>objects\o_enemy_spawner</object>
