@@ -12,12 +12,17 @@
     <sprite>sprites\s_enemy_two</sprite>
     <sprite>sprites\s_explosion_center</sprite>
     <sprite>sprites\s_enemy_laser</sprite>
+    <sprite>sprites\s_score</sprite>
+    <sprite>sprites\s_armor</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_stars_far</background>
     <background>background\b_stars_close</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\f_score</font>
+  </fonts>
   <objects name="objects">
     <object>objects\o_ship</object>
     <object>objects\o_laser</object>
@@ -30,6 +35,8 @@
       <object>objects\o_enemy_laser</object>
     </objects>
     <object>objects\o_game</object>
+    <object>objects\o_score</object>
+    <object>objects\o_armor</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_space</room>
