@@ -50,13 +50,26 @@ alarm[ENEMY_SPAWNER] = room_speed * 3;
           <argument>
             <kind>1</kind>
             <string>/// Spawn enemies
-var enemy = choose(o_enemy_one, o_enemy_two)
+var enemy = o_enemy_one;
+var alarm_time = random_range(room_speed * .5, room_speed * 2);
+
+// Increase the difficulty
+if (score &gt;= 200) {
+    enemy = choose(o_enemy_one, o_enemy_two);
+    alarm_time = random_range(room_speed * .25, room_speed);
+}
+else if (score &gt;= 100) {
+    enemy = choose(o_enemy_one, o_enemy_one, o_enemy_two);
+    alarm_time = random_range(room_speed * .25, room_speed * 1.5);
+}
+
+// Create the enemy
 enemy_index = object_get_sprite(enemy);
 enemy_sprite_offset = sprite_get_width(enemy_index) / 2;
 instance_create(random_range(enemy_sprite_offset, room_width - enemy_sprite_offset), -1 * enemy_sprite_offset, enemy);
 
 // Reset the alarm
-alarm[ENEMY_SPAWNER] = random_range(room_speed * .5, room_speed * 2);
+alarm[ENEMY_SPAWNER] = alarm_time;
 </string>
           </argument>
         </arguments>
