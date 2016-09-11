@@ -21,11 +21,14 @@
   <objects name="objects">
     <object>objects\o_ship</object>
     <object>objects\o_laser</object>
-    <object>objects\o_enemy_laser</object>
-    <object>objects\o_enemy_one</object>
-    <object>objects\o_enemy_two</object>
-    <object>objects\o_enemy_spawner</object>
     <object>objects\o_explosion_center</object>
+    <objects name="Enemy">
+      <object>objects\o_enemy_one</object>
+      <object>objects\o_enemy_spawner</object>
+      <object>objects\o_enemy_two</object>
+      <object>objects\o_enemy_parent</object>
+      <object>objects\o_enemy_laser</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_space</room>
