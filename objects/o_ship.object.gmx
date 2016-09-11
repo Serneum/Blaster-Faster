@@ -28,6 +28,31 @@
             <string>/// Initialize the ship
 alarm[LASER] = 1;
 armor = 4;
+laser_powerup = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Deactivate the laser powerup
+laser_powerup = false;
 </string>
           </argument>
         </arguments>
@@ -55,6 +80,17 @@ instance_create(x + 13, y - 6, o_laser);
 instance_create(x - 13, y - 6, o_laser);
 
 alarm[LASER] = room_speed / 6;
+
+// Create the powerup lasers
+if (laser_powerup) {
+    var laser = instance_create(x + 13, y - 6, o_laser);
+    laser.hspeed = .5;
+    
+    laser = instance_create(x - 13, y - 6, o_laser);
+    laser.hspeed = -.5;
+    
+    instance_create(x, y + (sprite_height / 2), o_laser);
+}
 </string>
           </argument>
         </arguments>
@@ -85,6 +121,56 @@ if (armor &lt;= 0) {
     instance_create(x, y, o_explosion_center);
     instance_destroy();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="o_laser_powerup">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collect the laser powerup
+laser_powerup = true;
+alarm[LASER_POWERUP] = room_speed * 5;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="o_armor_powerup">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collect the armor powerup
+armor += 1;
+armor = min(armor, 4);
 </string>
           </argument>
         </arguments>
