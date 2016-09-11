@@ -17,6 +17,7 @@
     <sprites name="HUD">
       <sprite>sprites\s_armor</sprite>
       <sprite>sprites\s_score</sprite>
+      <sprite>sprites\s_button</sprite>
     </sprites>
     <sprites name="Powerup">
       <sprite>sprites\s_armor_powerup</sprite>
@@ -44,11 +45,16 @@
     </objects>
     <objects name="HUD">
       <object>objects\o_armor</object>
-      <object>objects\o_score</object>
+      <object>objects\o_button_parent</object>
+      <object>objects\o_start_button</object>
+      <object>objects\o_menu_button</object>
+      <object>objects\o_quit_button</object>
     </objects>
     <objects name="Core">
       <object>objects\o_game</object>
-      <object>objects\o_game_object</object>
+      <object>objects\o_object_parent</object>
+      <object>objects\o_score</object>
+      <object>objects\o_high_score</object>
     </objects>
     <objects name="Powerup">
       <object>objects\o_armor_powerup</object>
@@ -57,6 +63,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\r_menu</room>
     <room>rooms\r_space</room>
   </rooms>
   <help>
