@@ -30,6 +30,9 @@ score = 0;
 high_score = 0;
 draw_set_colour(c_white);
 draw_set_font(f_score);
+
+// Play the music
+audio_play_sound(a_space_music, 10, true);
 </string>
           </argument>
         </arguments>
