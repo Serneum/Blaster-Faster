@@ -31,6 +31,7 @@
     <sprites name="Effects">
       <sprite>sprites\s_explosion_center</sprite>
       <sprite>sprites\s_flare</sprite>
+      <sprite>sprites\s_smoke</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\s_ship</sprite>
@@ -44,6 +45,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\add_screen_shake.gml</script>
+    <script>scripts\create_part_type_sprite.gml</script>
+    <script>scripts\create_explosion.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_score</font>
@@ -79,6 +82,7 @@
       <object>objects\o_view_controller</object>
       <object>objects\o_explosion_center</object>
       <object>objects\o_flare</object>
+      <object>objects\o_particle_creator</object>
     </objects>
     <objects name="Player">
       <object>objects\o_laser</object>
