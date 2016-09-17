@@ -3,7 +3,7 @@
   <spriteName>s_enemy_two</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>o_enemy_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -53,7 +53,7 @@ alarm[LASER] = 1;
           <argument>
             <kind>1</kind>
             <string>/// Fire the laser
-instance_create(x, y + 4, o_enemy_laser);
+instance_create(x, y + 8, o_enemy_laser);
 alarm[LASER] = room_speed / 1.5;
 </string>
           </argument>
