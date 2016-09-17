@@ -75,7 +75,7 @@ laser_powerup = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Create the lasers when left mouse button is pressed
+            <string>/// Create the lasers
 instance_create(x + 13, y - 6, o_laser);
 instance_create(x - 13, y - 6, o_laser);
 
@@ -89,7 +89,7 @@ if (laser_powerup) {
     laser = instance_create(x - 13, y - 6, o_laser);
     laser.hspeed = -.5;
     
-    instance_create(x, y + (sprite_height / 2), o_laser);
+    instance_create(x, y - (sprite_height / 2), o_laser);
 }
 </string>
           </argument>

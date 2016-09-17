@@ -6,9 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s_ship</sprite>
-    <sprite>sprites\s_laser</sprite>
-    <sprite>sprites\s_explosion_center</sprite>
     <sprites name="Enemy">
       <sprite>sprites\s_enemy_laser</sprite>
       <sprite>sprites\s_enemy_two</sprite>
@@ -23,6 +20,14 @@
       <sprite>sprites\s_armor_powerup</sprite>
       <sprite>sprites\s_laser_powerup</sprite>
     </sprites>
+    <sprites name="Effects">
+      <sprite>sprites\s_explosion_center</sprite>
+      <sprite>sprites\s_flare</sprite>
+    </sprites>
+    <sprites name="Player">
+      <sprite>sprites\s_ship</sprite>
+      <sprite>sprites\s_laser</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\b_stars_far</background>
@@ -36,8 +41,6 @@
     <font>fonts\f_score</font>
   </fonts>
   <objects name="objects">
-    <object>objects\o_ship</object>
-    <object>objects\o_laser</object>
     <objects name="Enemy">
       <object>objects\o_enemy_one</object>
       <object>objects\o_enemy_spawner</object>
@@ -67,6 +70,11 @@
       <object>objects\o_screen_flash</object>
       <object>objects\o_view_controller</object>
       <object>objects\o_explosion_center</object>
+      <object>objects\o_flare</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\o_laser</object>
+      <object>objects\o_ship</object>
     </objects>
   </objects>
   <rooms name="rooms">

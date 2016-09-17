@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>/// Initialize laser object
 vspeed = 4;
+instance_create(x, y, o_flare);
 </string>
           </argument>
         </arguments>
