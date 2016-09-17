@@ -61,6 +61,7 @@
       <object>objects\o_powerup_parent</object>
       <object>objects\o_laser_powerup</object>
     </objects>
+    <object>objects\o_screen_flash</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>

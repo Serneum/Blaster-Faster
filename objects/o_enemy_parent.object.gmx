@@ -89,6 +89,7 @@ if (armor &lt;= 0) {
             <string>/// Damage the ship
 other.armor -= 1;
 armor = 0;
+instance_create(0, 0, o_screen_flash);
 </string>
           </argument>
         </arguments>
