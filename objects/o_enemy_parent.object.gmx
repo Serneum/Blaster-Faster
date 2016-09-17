@@ -57,6 +57,10 @@ if ((score &gt;= 200 &amp;&amp; powerup_roll &gt;= .90) ||
           <argument>
             <kind>1</kind>
             <string>/// Control the enemy
+if (y &gt; room_height + sprite_height / 2) {
+    instance_destroy();
+}
+
 // Die code
 if (armor &lt;= 0) {
     create_explosion(x, y);
