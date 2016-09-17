@@ -51,6 +51,7 @@ vspeed = 2;
             <kind>1</kind>
             <string>/// Remove the powerup
 instance_destroy();
+audio_play_sound(a_powerup, 4, false);
 </string>
           </argument>
         </arguments>

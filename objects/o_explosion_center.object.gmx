@@ -29,6 +29,7 @@
 image_angle = random(360);
 image_alpha = .8;
 add_screen_shake(8, room_speed * .25);
+audio_play_sound(a_explode, 7, false);
 </string>
           </argument>
         </arguments>
