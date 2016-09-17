@@ -52,7 +52,7 @@ alarm[LASER] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Fire the laser
+            <string>/// Fire the laser
 instance_create(x, y + 4, o_enemy_laser);
 alarm[LASER] = room_speed / 1.5;
 </string>
