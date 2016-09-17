@@ -634,7 +634,8 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="3">
+    <constants number="4">
+      <constant name="SCREEN_SHAKE">0</constant>
       <constant name="LASER_POWERUP">1</constant>
       <constant name="LASER">0</constant>
       <constant name="ENEMY_SPAWNER">0</constant>

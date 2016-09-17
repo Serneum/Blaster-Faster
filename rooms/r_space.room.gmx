@@ -56,6 +56,7 @@ randomize();</code>
     <instance objName="o_enemy_spawner" x="9" y="48" name="inst_0AF15526" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_armor" x="9" y="8" name="inst_5CF1D7C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_score" x="171" y="8" name="inst_7E74864C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_view_controller" x="81" y="48" name="inst_9052A770" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

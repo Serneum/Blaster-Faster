@@ -29,13 +29,15 @@
     <background>background\b_stars_close</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\add_screen_shake.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\f_score</font>
   </fonts>
   <objects name="objects">
     <object>objects\o_ship</object>
     <object>objects\o_laser</object>
-    <object>objects\o_explosion_center</object>
     <objects name="Enemy">
       <object>objects\o_enemy_one</object>
       <object>objects\o_enemy_spawner</object>
@@ -61,7 +63,11 @@
       <object>objects\o_powerup_parent</object>
       <object>objects\o_laser_powerup</object>
     </objects>
-    <object>objects\o_screen_flash</object>
+    <objects name="Effects">
+      <object>objects\o_screen_flash</object>
+      <object>objects\o_view_controller</object>
+      <object>objects\o_explosion_center</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
