@@ -55,6 +55,7 @@ instance_destroy();
 other.armor -= 1;
 instance_create(0, 0, o_screen_flash);
 add_screen_shake(4, room_speed * .125);
+instance_create(x, y, o_flare);
 </string>
           </argument>
         </arguments>
